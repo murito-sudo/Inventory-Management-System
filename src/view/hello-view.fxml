@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="390.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.wgu_software1.Main">
+   <children>
+      <Button layoutX="374.0" layoutY="297.0" mnemonicParsing="false" text="Delete" />
+      <Label layoutX="24.0" layoutY="24.0" text="Inventory Mangement System">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TableView layoutX="33.0" layoutY="88.0" prefHeight="200.0" prefWidth="411.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Part ID" />
+          <TableColumn prefWidth="88.79998016357422" text="Part NAME" />
+            <TableColumn prefWidth="96.00003051757812" text="Inventory Level" />
+            <TableColumn prefWidth="149.39999389648438" text="Price / Cost per unit" />
+        </columns>
+      </TableView>
+      <TableView layoutX="468.0" layoutY="88.0" prefHeight="200.0" prefWidth="411.0">
+        <columns>
+          <TableColumn prefWidth="86.4000244140625" text="Product ID" />
+          <TableColumn prefWidth="92.0" text="Product Name" />
+            <TableColumn prefWidth="96.800048828125" text="Inventory Level" />
+            <TableColumn prefWidth="131.2000732421875" text="Price / Cost per unit" />
+        </columns>
+      </TableView>
+      <Button layoutX="257.0" layoutY="297.0" mnemonicParsing="false" text="Add" />
+      <Button layoutX="307.0" layoutY="297.0" mnemonicParsing="false" text="Modify" />
+      <Button layoutX="680.0" layoutY="297.0" mnemonicParsing="false" text="Add" />
+      <Button layoutX="729.0" layoutY="297.0" mnemonicParsing="false" text="Modify" />
+      <Button layoutX="793.0" layoutY="297.0" mnemonicParsing="false" onMouseClicked="#exitApp" text="Delete" />
+      <Label layoutX="33.0" layoutY="71.0" text="Parts" />
+      <Label layoutX="468.0" layoutY="71.0" text="Products" />
+      <TextField layoutX="276.0" layoutY="59.0" promptText="Search By PartID or Name" />
+      <TextField layoutX="709.0" layoutY="59.0" promptText="Search by ProductID or Name" />
+      <Button fx:id="exitButton" layoutX="776.0" layoutY="351.0" mnemonicParsing="false" onMouseClicked="#exitApp" text="Exit" />
+   </children>
+</Pane>
